@@ -22,14 +22,14 @@ decrement = (x) => {
 
 findResult = (x) =>{
     if( x >= 3){
-        return "Limit Reached";
+        return "Ok that's enough increasing!";
     } else
     return "";
 }
 
 decResult = (x) =>{
     if( x <= 0){
-        return "racecar";
+        return "No negative energy here chief, keep increasing";
     } 
 }
 
@@ -57,7 +57,7 @@ decClick = () =>{
     if(currentCount < 0){
         this.setState({
             count: 0,
-            result:currResult
+            result:currentResult
         })
     }else
     this.setState({
@@ -72,7 +72,7 @@ render() {
     return(
         <div className="counter">
         <h2 className="current-count">{currCount}</h2>
-        <h3 className="result" style={{color: "red"}}></h3>
+        <h3 className="result">{result}</h3>
         <button className="increment" onClick={this.handleClick}>
             Incureasu!
         </button>
