@@ -4,7 +4,7 @@ export default class Footer extends Component {
     render() {
         return(
             <div className="footer">
-                <h1>Racecar Backwards Is Still Racecar</h1> 
+                <h3>Racecar Backwards Is Still Racecar</h3> 
             </div>
         )
     }

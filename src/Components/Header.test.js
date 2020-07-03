@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from './App';
+import Header from './Header';
 
 
 describe('Header comp test', () =>{
-    it('looks for h1 in footer', () =>{
+    it('looks for h1 in header', () =>{
         const wrapper = shallow(<Header />);
         const text = wrapper.find('h1').text();
-       expect(text).toEqual('0');
+       expect(text).toEqual('Counter App');
     })
     
 })

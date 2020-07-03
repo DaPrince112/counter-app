@@ -22,7 +22,7 @@ decrement = (x) => {
 
 findResult = (x) =>{
     if( x >= 3){
-        return "Ok that's enough increasing!";
+        return "Ok that is enough increasing!";
     } else
     return "";
 }
